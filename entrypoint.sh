@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cd /build
+cd build/
 
 # If we have set EXTRA_BACKENDS, then we need to prepare the backends
 if [ -n "$EXTRA_BACKENDS" ]; then
