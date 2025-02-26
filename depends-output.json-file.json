@@ -1,0 +1,1017 @@
+{
+  "schemaVersion" : "1.0",
+  "name" : "depends-output.json-file-sdsm",
+  "variables" : [ "/home/whited/LocalAI/.github/ci/modelslist.go", "/home/whited/LocalAI/assets.go", "/home/whited/LocalAI/backend/go/bark/gobark.go", "/home/whited/LocalAI/backend/go/bark/main.go", "/home/whited/LocalAI/backend/go/image/stablediffusion-ggml/gosd.go", "/home/whited/LocalAI/backend/go/image/stablediffusion-ggml/main.go", "/home/whited/LocalAI/backend/go/llm/langchain/langchain.go", "/home/whited/LocalAI/backend/go/llm/langchain/main.go", "/home/whited/LocalAI/backend/go/llm/llama/llama.go", "/home/whited/LocalAI/backend/go/llm/llama/main.go", "/home/whited/LocalAI/backend/go/stores/debug.go", "/home/whited/LocalAI/backend/go/stores/main.go", "/home/whited/LocalAI/backend/go/stores/production.go", "/home/whited/LocalAI/backend/go/stores/store.go", "/home/whited/LocalAI/backend/go/transcribe/whisper/main.go", "/home/whited/LocalAI/backend/go/transcribe/whisper/whisper.go", "/home/whited/LocalAI/backend/go/tts/main.go", "/home/whited/LocalAI/backend/go/tts/piper.go", "/home/whited/LocalAI/backend/go/vad/silero/main.go", "/home/whited/LocalAI/backend/go/vad/silero/vad.go", "/home/whited/LocalAI/core/application/application.go", "/home/whited/LocalAI/core/application/config_file_watcher.go", "/home/whited/LocalAI/core/application/startup.go", "/home/whited/LocalAI/core/backend/backend_suite_test.go", "/home/whited/LocalAI/core/backend/embeddings.go", "/home/whited/LocalAI/core/backend/image.go", "/home/whited/LocalAI/core/backend/llm.go", "/home/whited/LocalAI/core/backend/llm_test.go", "/home/whited/LocalAI/core/backend/options.go", "/home/whited/LocalAI/core/backend/rerank.go", "/home/whited/LocalAI/core/backend/soundgeneration.go", "/home/whited/LocalAI/core/backend/stores.go", "/home/whited/LocalAI/core/backend/token_metrics.go", "/home/whited/LocalAI/core/backend/tokenize.go", "/home/whited/LocalAI/core/backend/transcript.go", "/home/whited/LocalAI/core/backend/tts.go", "/home/whited/LocalAI/core/backend/vad.go", "/home/whited/LocalAI/core/cli/api/p2p.go", "/home/whited/LocalAI/core/cli/cli.go", "/home/whited/LocalAI/core/cli/context/context.go", "/home/whited/LocalAI/core/cli/explorer.go", "/home/whited/LocalAI/core/cli/federated.go", "/home/whited/LocalAI/core/cli/models.go", "/home/whited/LocalAI/core/cli/run.go", "/home/whited/LocalAI/core/cli/soundgeneration.go", "/home/whited/LocalAI/core/cli/transcript.go", "/home/whited/LocalAI/core/cli/tts.go", "/home/whited/LocalAI/core/cli/util.go", "/home/whited/LocalAI/core/cli/worker/worker.go", "/home/whited/LocalAI/core/cli/worker/worker_llamacpp.go", "/home/whited/LocalAI/core/cli/worker/worker_nop2p.go", "/home/whited/LocalAI/core/cli/worker/worker_p2p.go", "/home/whited/LocalAI/core/clients/store.go", "/home/whited/LocalAI/core/config/application_config.go", "/home/whited/LocalAI/core/config/backend_config.go", "/home/whited/LocalAI/core/config/backend_config_filter.go", "/home/whited/LocalAI/core/config/backend_config_loader.go", "/home/whited/LocalAI/core/config/backend_config_test.go", "/home/whited/LocalAI/core/config/config_suite_test.go", "/home/whited/LocalAI/core/config/config_test.go", "/home/whited/LocalAI/core/config/gallery.go", "/home/whited/LocalAI/core/config/guesser.go", "/home/whited/LocalAI/core/dependencies_manager/manager.go", "/home/whited/LocalAI/core/explorer/database.go", "/home/whited/LocalAI/core/explorer/database_test.go", "/home/whited/LocalAI/core/explorer/discovery.go", "/home/whited/LocalAI/core/explorer/explorer_suite_test.go", "/home/whited/LocalAI/core/gallery/gallery.go", "/home/whited/LocalAI/core/gallery/gallery_suite_test.go", "/home/whited/LocalAI/core/gallery/models.go", "/home/whited/LocalAI/core/gallery/models_test.go", "/home/whited/LocalAI/core/gallery/op.go", "/home/whited/LocalAI/core/gallery/request.go", "/home/whited/LocalAI/core/gallery/request_test.go", "/home/whited/LocalAI/core/http/app.go", "/home/whited/LocalAI/core/http/app_test.go", "/home/whited/LocalAI/core/http/elements/buttons.go", "/home/whited/LocalAI/core/http/elements/gallery.go", "/home/whited/LocalAI/core/http/elements/p2p.go", "/home/whited/LocalAI/core/http/elements/progressbar.go", "/home/whited/LocalAI/core/http/endpoints/elevenlabs/soundgeneration.go", "/home/whited/LocalAI/core/http/endpoints/elevenlabs/tts.go", "/home/whited/LocalAI/core/http/endpoints/explorer/dashboard.go", "/home/whited/LocalAI/core/http/endpoints/jina/rerank.go", "/home/whited/LocalAI/core/http/endpoints/localai/backend_monitor.go", "/home/whited/LocalAI/core/http/endpoints/localai/gallery.go", "/home/whited/LocalAI/core/http/endpoints/localai/get_token_metrics.go", "/home/whited/LocalAI/core/http/endpoints/localai/metrics.go", "/home/whited/LocalAI/core/http/endpoints/localai/p2p.go", "/home/whited/LocalAI/core/http/endpoints/localai/stores.go", "/home/whited/LocalAI/core/http/endpoints/localai/system.go", "/home/whited/LocalAI/core/http/endpoints/localai/tokenize.go", "/home/whited/LocalAI/core/http/endpoints/localai/tts.go", "/home/whited/LocalAI/core/http/endpoints/localai/vad.go", "/home/whited/LocalAI/core/http/endpoints/localai/welcome.go", "/home/whited/LocalAI/core/http/endpoints/openai/assistant.go", "/home/whited/LocalAI/core/http/endpoints/openai/assistant_test.go", "/home/whited/LocalAI/core/http/endpoints/openai/chat.go", "/home/whited/LocalAI/core/http/endpoints/openai/completion.go", "/home/whited/LocalAI/core/http/endpoints/openai/edit.go", "/home/whited/LocalAI/core/http/endpoints/openai/embeddings.go", "/home/whited/LocalAI/core/http/endpoints/openai/files.go", "/home/whited/LocalAI/core/http/endpoints/openai/files_test.go", "/home/whited/LocalAI/core/http/endpoints/openai/image.go", "/home/whited/LocalAI/core/http/endpoints/openai/inference.go", "/home/whited/LocalAI/core/http/endpoints/openai/list.go", "/home/whited/LocalAI/core/http/endpoints/openai/transcription.go", "/home/whited/LocalAI/core/http/explorer.go", "/home/whited/LocalAI/core/http/http_suite_test.go", "/home/whited/LocalAI/core/http/middleware/auth.go", "/home/whited/LocalAI/core/http/middleware/request.go", "/home/whited/LocalAI/core/http/middleware/strippathprefix.go", "/home/whited/LocalAI/core/http/middleware/strippathprefix_test.go", "/home/whited/LocalAI/core/http/render.go", "/home/whited/LocalAI/core/http/routes/elevenlabs.go", "/home/whited/LocalAI/core/http/routes/explorer.go", "/home/whited/LocalAI/core/http/routes/health.go", "/home/whited/LocalAI/core/http/routes/jina.go", "/home/whited/LocalAI/core/http/routes/localai.go", "/home/whited/LocalAI/core/http/routes/openai.go", "/home/whited/LocalAI/core/http/routes/ui.go", "/home/whited/LocalAI/core/http/utils/baseurl.go", "/home/whited/LocalAI/core/http/utils/baseurl_test.go", "/home/whited/LocalAI/core/p2p/federated.go", "/home/whited/LocalAI/core/p2p/federated_server.go", "/home/whited/LocalAI/core/p2p/node.go", "/home/whited/LocalAI/core/p2p/p2p.go", "/home/whited/LocalAI/core/p2p/p2p_common.go", "/home/whited/LocalAI/core/p2p/p2p_disabled.go", "/home/whited/LocalAI/core/schema/elevenlabs.go", "/home/whited/LocalAI/core/schema/jina.go", "/home/whited/LocalAI/core/schema/localai.go", "/home/whited/LocalAI/core/schema/openai.go", "/home/whited/LocalAI/core/schema/prediction.go", "/home/whited/LocalAI/core/schema/request.go", "/home/whited/LocalAI/core/schema/tokenize.go", "/home/whited/LocalAI/core/schema/transcription.go", "/home/whited/LocalAI/core/services/backend_monitor.go", "/home/whited/LocalAI/core/services/gallery.go", "/home/whited/LocalAI/core/services/list_models.go", "/home/whited/LocalAI/core/services/metrics.go", "/home/whited/LocalAI/internal/version.go", "/home/whited/LocalAI/main.go", "/home/whited/LocalAI/pkg/assets/extract.go", "/home/whited/LocalAI/pkg/assets/list.go", "/home/whited/LocalAI/pkg/concurrency/concurrency_suite_test.go", "/home/whited/LocalAI/pkg/concurrency/jobresult.go", "/home/whited/LocalAI/pkg/concurrency/jobresult_test.go", "/home/whited/LocalAI/pkg/downloader/downloader_suite_test.go", "/home/whited/LocalAI/pkg/downloader/huggingface.go", "/home/whited/LocalAI/pkg/downloader/progress.go", "/home/whited/LocalAI/pkg/downloader/uri.go", "/home/whited/LocalAI/pkg/downloader/uri_test.go", "/home/whited/LocalAI/pkg/functions/function_structure.go", "/home/whited/LocalAI/pkg/functions/functions.go", "/home/whited/LocalAI/pkg/functions/functions_suite_test.go", "/home/whited/LocalAI/pkg/functions/functions_test.go", "/home/whited/LocalAI/pkg/functions/grammars/bnf_rules.go", "/home/whited/LocalAI/pkg/functions/grammars/grammars_suite_test.go", "/home/whited/LocalAI/pkg/functions/grammars/json_schema.go", "/home/whited/LocalAI/pkg/functions/grammars/json_schema_test.go", "/home/whited/LocalAI/pkg/functions/grammars/llama31_schema.go", "/home/whited/LocalAI/pkg/functions/grammars/llama31_schema_test.go", "/home/whited/LocalAI/pkg/functions/grammars/options.go", "/home/whited/LocalAI/pkg/functions/grammars/rules.go", "/home/whited/LocalAI/pkg/functions/grammars/types.go", "/home/whited/LocalAI/pkg/functions/json_mode.go", "/home/whited/LocalAI/pkg/functions/parse.go", "/home/whited/LocalAI/pkg/functions/parse_test.go", "/home/whited/LocalAI/pkg/grpc/backend.go", "/home/whited/LocalAI/pkg/grpc/base/base.go", "/home/whited/LocalAI/pkg/grpc/base/singlethread.go", "/home/whited/LocalAI/pkg/grpc/client.go", "/home/whited/LocalAI/pkg/grpc/embed.go", "/home/whited/LocalAI/pkg/grpc/interface.go", "/home/whited/LocalAI/pkg/grpc/server.go", "/home/whited/LocalAI/pkg/langchain/huggingface.go", "/home/whited/LocalAI/pkg/langchain/langchain.go", "/home/whited/LocalAI/pkg/library/dynaload.go", "/home/whited/LocalAI/pkg/model/filters.go", "/home/whited/LocalAI/pkg/model/initializers.go", "/home/whited/LocalAI/pkg/model/loader.go", "/home/whited/LocalAI/pkg/model/loader_options.go", "/home/whited/LocalAI/pkg/model/loader_test.go", "/home/whited/LocalAI/pkg/model/model.go", "/home/whited/LocalAI/pkg/model/model_suite_test.go", "/home/whited/LocalAI/pkg/model/process.go", "/home/whited/LocalAI/pkg/model/watchdog.go", "/home/whited/LocalAI/pkg/oci/blob.go", "/home/whited/LocalAI/pkg/oci/blob_test.go", "/home/whited/LocalAI/pkg/oci/image.go", "/home/whited/LocalAI/pkg/oci/image_test.go", "/home/whited/LocalAI/pkg/oci/oci_suite_test.go", "/home/whited/LocalAI/pkg/oci/ollama.go", "/home/whited/LocalAI/pkg/oci/ollama_test.go", "/home/whited/LocalAI/pkg/startup/model_preload.go", "/home/whited/LocalAI/pkg/startup/model_preload_test.go", "/home/whited/LocalAI/pkg/startup/startup_suite_test.go", "/home/whited/LocalAI/pkg/store/client.go", "/home/whited/LocalAI/pkg/templates/cache.go", "/home/whited/LocalAI/pkg/templates/evaluator.go", "/home/whited/LocalAI/pkg/templates/evaluator_test.go", "/home/whited/LocalAI/pkg/templates/multimodal.go", "/home/whited/LocalAI/pkg/templates/multimodal_test.go", "/home/whited/LocalAI/pkg/templates/utils_suite_test.go", "/home/whited/LocalAI/pkg/utils/base64.go", "/home/whited/LocalAI/pkg/utils/base64_test.go", "/home/whited/LocalAI/pkg/utils/config.go", "/home/whited/LocalAI/pkg/utils/ffmpeg.go", "/home/whited/LocalAI/pkg/utils/hash.go", "/home/whited/LocalAI/pkg/utils/json.go", "/home/whited/LocalAI/pkg/utils/logging.go", "/home/whited/LocalAI/pkg/utils/path.go", "/home/whited/LocalAI/pkg/utils/strings.go", "/home/whited/LocalAI/pkg/utils/untar.go", "/home/whited/LocalAI/pkg/utils/utils_suite_test.go", "/home/whited/LocalAI/pkg/xsync/map.go", "/home/whited/LocalAI/pkg/xsync/map_test.go", "/home/whited/LocalAI/pkg/xsync/sync_suite_test.go", "/home/whited/LocalAI/pkg/xsysinfo/cpu.go", "/home/whited/LocalAI/pkg/xsysinfo/gpu.go", "/home/whited/LocalAI/sources/go-piper/example/main.go", "/home/whited/LocalAI/sources/go-piper/piper.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/doc.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/examples/go-model-download/context.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/examples/go-model-download/main.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/examples/go-whisper/color.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/examples/go-whisper/flags.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/examples/go-whisper/main.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/examples/go-whisper/process.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/params.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/consts.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/context.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/context_test.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/doc.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/interface.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/model.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/model_test.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/util_test.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/whisper.go", "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/whisper_test.go", "/home/whited/LocalAI/swagger/docs.go", "/home/whited/LocalAI/tests/e2e-aio/e2e_suite_test.go", "/home/whited/LocalAI/tests/e2e-aio/e2e_test.go", "/home/whited/LocalAI/tests/e2e-aio/sample_data_test.go", "/home/whited/LocalAI/tests/e2e/e2e_suite_test.go", "/home/whited/LocalAI/tests/e2e/e2e_test.go", "/home/whited/LocalAI/tests/integration/integration_suite_test.go", "/home/whited/LocalAI/tests/integration/stores_test.go" ],
+  "cells" : [ {
+    "src" : 32,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.TokenMetrics",
+        "file" : "/home/whited/LocalAI/core/backend/token_metrics.go",
+        "type" : "function",
+        "lineNumber" : 12
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 72,
+    "dest" : 60,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "gallery.Metadata",
+        "file" : "/home/whited/LocalAI/core/gallery/request.go",
+        "type" : "type",
+        "lineNumber" : 32
+      },
+      "dest" : {
+        "object" : "config.Gallery",
+        "file" : "/home/whited/LocalAI/core/config/gallery.go",
+        "type" : "type",
+        "lineNumber" : 3
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 35,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.ModelTTS",
+        "file" : "/home/whited/LocalAI/core/backend/tts.go",
+        "type" : "function",
+        "lineNumber" : 16
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 96,
+    "dest" : 95,
+    "values" : {
+      "Return" : 3.0,
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "openai.createFileAndAssistant",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/assistant_test.go",
+        "type" : "function",
+        "lineNumber" : 353
+      },
+      "dest" : {
+        "object" : "openai.Assistant",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/assistant.go",
+        "type" : "type",
+        "lineNumber" : 44
+      },
+      "type" : "Return"
+    }, {
+      "src" : {
+        "object" : "openai.createAssistantFile",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/assistant_test.go",
+        "type" : "function",
+        "lineNumber" : 378
+      },
+      "dest" : {
+        "object" : "openai.AssistantFile",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/assistant.go",
+        "type" : "type",
+        "lineNumber" : 296
+      },
+      "type" : "Return"
+    }, {
+      "src" : {
+        "object" : "openai.createAssistant",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/assistant_test.go",
+        "type" : "function",
+        "lineNumber" : 407
+      },
+      "dest" : {
+        "object" : "openai.Assistant",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/assistant.go",
+        "type" : "type",
+        "lineNumber" : 44
+      },
+      "type" : "Return"
+    }, {
+      "src" : {
+        "object" : "openai.createAssistant",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/assistant_test.go",
+        "type" : "function",
+        "lineNumber" : 407
+      },
+      "dest" : {
+        "object" : "openai.AssistantRequest",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/assistant.go",
+        "type" : "type",
+        "lineNumber" : 62
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 132,
+    "dest" : 153,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "schema.JsonSchema",
+        "file" : "/home/whited/LocalAI/core/schema/openai.go",
+        "type" : "type",
+        "lineNumber" : 157
+      },
+      "dest" : {
+        "object" : "functions.Item",
+        "file" : "/home/whited/LocalAI/pkg/functions/function_structure.go",
+        "type" : "type",
+        "lineNumber" : 9
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 67,
+    "dest" : 60,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "gallery.getGalleryModels",
+        "file" : "/home/whited/LocalAI/core/gallery/gallery.go",
+        "type" : "function",
+        "lineNumber" : 147
+      },
+      "dest" : {
+        "object" : "config.Gallery",
+        "file" : "/home/whited/LocalAI/core/config/gallery.go",
+        "type" : "type",
+        "lineNumber" : 3
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 102,
+    "dest" : 132,
+    "values" : {
+      "Return" : 3.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "openai.CallFilesUploadEndpointWithCleanup",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/files_test.go",
+        "type" : "function",
+        "lineNumber" : 200
+      },
+      "dest" : {
+        "object" : "schema.File",
+        "file" : "/home/whited/LocalAI/core/schema/openai.go",
+        "type" : "type",
+        "lineNumber" : 117
+      },
+      "type" : "Return"
+    }, {
+      "src" : {
+        "object" : "openai.responseToFile",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/files_test.go",
+        "type" : "function",
+        "lineNumber" : 279
+      },
+      "dest" : {
+        "object" : "schema.File",
+        "file" : "/home/whited/LocalAI/core/schema/openai.go",
+        "type" : "type",
+        "lineNumber" : 117
+      },
+      "type" : "Return"
+    }, {
+      "src" : {
+        "object" : "openai.responseToListFile",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/files_test.go",
+        "type" : "function",
+        "lineNumber" : 291
+      },
+      "dest" : {
+        "object" : "schema.ListFiles",
+        "file" : "/home/whited/LocalAI/core/schema/openai.go",
+        "type" : "type",
+        "lineNumber" : 126
+      },
+      "type" : "Return"
+    } ]
+  }, {
+    "src" : 33,
+    "dest" : 135,
+    "values" : {
+      "Return" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.ModelTokenize",
+        "file" : "/home/whited/LocalAI/core/backend/tokenize.go",
+        "type" : "function",
+        "lineNumber" : 10
+      },
+      "dest" : {
+        "object" : "schema.TokenizeResponse",
+        "file" : "/home/whited/LocalAI/core/schema/tokenize.go",
+        "type" : "type",
+        "lineNumber" : 8
+      },
+      "type" : "Return"
+    } ]
+  }, {
+    "src" : 229,
+    "dest" : 239,
+    "values" : {
+      "Parameter" : 2.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "main.OutputSRT",
+        "file" : "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/examples/go-whisper/process.go",
+        "type" : "function",
+        "lineNumber" : 88
+      },
+      "dest" : {
+        "object" : "whisper.Context",
+        "file" : "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/whisper.go",
+        "type" : "alias",
+        "lineNumber" : 0
+      },
+      "type" : "Parameter"
+    }, {
+      "src" : {
+        "object" : "main.Output",
+        "file" : "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/examples/go-whisper/process.go",
+        "type" : "function",
+        "lineNumber" : 106
+      },
+      "dest" : {
+        "object" : "whisper.Context",
+        "file" : "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/whisper.go",
+        "type" : "alias",
+        "lineNumber" : 0
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 34,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.ModelTranscription",
+        "file" : "/home/whited/LocalAI/core/backend/transcript.go",
+        "type" : "function",
+        "lineNumber" : 15
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 232,
+    "dest" : 235,
+    "values" : {
+      "Return" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "whisper.toSegment",
+        "file" : "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/context.go",
+        "type" : "function",
+        "lineNumber" : 318
+      },
+      "dest" : {
+        "object" : "whisper.Segment",
+        "file" : "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/interface.go",
+        "type" : "type",
+        "lineNumber" : 84
+      },
+      "type" : "Return"
+    } ]
+  }, {
+    "src" : 30,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.SoundGeneration",
+        "file" : "/home/whited/LocalAI/core/backend/soundgeneration.go",
+        "type" : "function",
+        "lineNumber" : 15
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 26,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.Finetune",
+        "file" : "/home/whited/LocalAI/core/backend/llm.go",
+        "type" : "function",
+        "lineNumber" : 181
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 163,
+    "dest" : 165,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "grammars.WithSchemaType",
+        "file" : "/home/whited/LocalAI/pkg/functions/grammars/options.go",
+        "type" : "function",
+        "lineNumber" : 55
+      },
+      "dest" : {
+        "object" : "grammars.SchemaConverterType",
+        "file" : "/home/whited/LocalAI/pkg/functions/grammars/types.go",
+        "type" : "alias",
+        "lineNumber" : 0
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 232,
+    "dest" : 239,
+    "values" : {
+      "Return" : 1.0,
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "whisper.newContext",
+        "file" : "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/context.go",
+        "type" : "function",
+        "lineNumber" : 29
+      },
+      "dest" : {
+        "object" : "whisper.Context",
+        "file" : "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/whisper.go",
+        "type" : "alias",
+        "lineNumber" : 0
+      },
+      "type" : "Return"
+    }, {
+      "src" : {
+        "object" : "whisper.newContext",
+        "file" : "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/pkg/whisper/context.go",
+        "type" : "function",
+        "lineNumber" : 29
+      },
+      "dest" : {
+        "object" : "whisper.Params",
+        "file" : "/home/whited/LocalAI/sources/whisper.cpp/bindings/go/whisper.go",
+        "type" : "alias",
+        "lineNumber" : 0
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 96,
+    "dest" : 132,
+    "values" : {
+      "Return" : 1.0,
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "openai.createFileAndAssistant",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/assistant_test.go",
+        "type" : "function",
+        "lineNumber" : 353
+      },
+      "dest" : {
+        "object" : "schema.File",
+        "file" : "/home/whited/LocalAI/core/schema/openai.go",
+        "type" : "type",
+        "lineNumber" : 117
+      },
+      "type" : "Return"
+    }, {
+      "src" : {
+        "object" : "openai.createAssistantFile",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/assistant_test.go",
+        "type" : "function",
+        "lineNumber" : 378
+      },
+      "dest" : {
+        "object" : "schema.AssistantFileRequest",
+        "file" : "/home/whited/LocalAI/core/schema/openai.go",
+        "type" : "type",
+        "lineNumber" : 131
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 29,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.Rerank",
+        "file" : "/home/whited/LocalAI/core/backend/rerank.go",
+        "type" : "function",
+        "lineNumber" : 12
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 104,
+    "dest" : 26,
+    "values" : {
+      "Return" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "openai.ComputeChoices",
+        "file" : "/home/whited/LocalAI/core/http/endpoints/openai/inference.go",
+        "type" : "function",
+        "lineNumber" : 11
+      },
+      "dest" : {
+        "object" : "backend.TokenUsage",
+        "file" : "/home/whited/LocalAI/core/backend/llm.go",
+        "type" : "type",
+        "lineNumber" : 29
+      },
+      "type" : "Return"
+    } ]
+  }, {
+    "src" : 149,
+    "dest" : 151,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "downloader.HuggingFaceScan",
+        "file" : "/home/whited/LocalAI/pkg/downloader/huggingface.go",
+        "type" : "function",
+        "lineNumber" : 24
+      },
+      "dest" : {
+        "object" : "downloader.URI",
+        "file" : "/home/whited/LocalAI/pkg/downloader/uri.go",
+        "type" : "alias",
+        "lineNumber" : 0
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 38,
+    "dest" : 47,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "/home/whited/LocalAI/core/cli/cli.go",
+        "file" : "/home/whited/LocalAI/core/cli/cli.go",
+        "type" : "file",
+        "lineNumber" : 18
+      },
+      "dest" : {
+        "object" : "cli.UtilCMD",
+        "file" : "/home/whited/LocalAI/core/cli/util.go",
+        "type" : "type",
+        "lineNumber" : 17
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 28,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 4.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.ModelOptions",
+        "file" : "/home/whited/LocalAI/core/backend/options.go",
+        "type" : "function",
+        "lineNumber" : 14
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    }, {
+      "src" : {
+        "object" : "backend.getSeed",
+        "file" : "/home/whited/LocalAI/core/backend/options.go",
+        "type" : "function",
+        "lineNumber" : 66
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    }, {
+      "src" : {
+        "object" : "backend.grpcModelOpts",
+        "file" : "/home/whited/LocalAI/core/backend/options.go",
+        "type" : "function",
+        "lineNumber" : 80
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    }, {
+      "src" : {
+        "object" : "backend.gRPCPredictOpts",
+        "file" : "/home/whited/LocalAI/core/backend/options.go",
+        "type" : "function",
+        "lineNumber" : 202
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 38,
+    "dest" : 48,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "/home/whited/LocalAI/core/cli/cli.go",
+        "file" : "/home/whited/LocalAI/core/cli/cli.go",
+        "type" : "file",
+        "lineNumber" : 17
+      },
+      "dest" : {
+        "object" : "worker.Worker",
+        "file" : "/home/whited/LocalAI/core/cli/worker/worker.go",
+        "type" : "type",
+        "lineNumber" : 8
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 67,
+    "dest" : 72,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "gallery.InstallModelFromGallery",
+        "file" : "/home/whited/LocalAI/core/gallery/gallery.go",
+        "type" : "function",
+        "lineNumber" : 19
+      },
+      "dest" : {
+        "object" : "gallery.GalleryModel",
+        "file" : "/home/whited/LocalAI/core/gallery/request.go",
+        "type" : "type",
+        "lineNumber" : 13
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 38,
+    "dest" : 43,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "/home/whited/LocalAI/core/cli/cli.go",
+        "file" : "/home/whited/LocalAI/core/cli/cli.go",
+        "type" : "file",
+        "lineNumber" : 11
+      },
+      "dest" : {
+        "object" : "cli.RunCMD",
+        "file" : "/home/whited/LocalAI/core/cli/run.go",
+        "type" : "type",
+        "lineNumber" : 19
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 38,
+    "dest" : 44,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "/home/whited/LocalAI/core/cli/cli.go",
+        "file" : "/home/whited/LocalAI/core/cli/cli.go",
+        "type" : "file",
+        "lineNumber" : 15
+      },
+      "dest" : {
+        "object" : "cli.SoundGenerationCMD",
+        "file" : "/home/whited/LocalAI/core/cli/soundgeneration.go",
+        "type" : "type",
+        "lineNumber" : 18
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 38,
+    "dest" : 45,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "/home/whited/LocalAI/core/cli/cli.go",
+        "file" : "/home/whited/LocalAI/core/cli/cli.go",
+        "type" : "file",
+        "lineNumber" : 16
+      },
+      "dest" : {
+        "object" : "cli.TranscriptCMD",
+        "file" : "/home/whited/LocalAI/core/cli/transcript.go",
+        "type" : "type",
+        "lineNumber" : 15
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 38,
+    "dest" : 46,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "/home/whited/LocalAI/core/cli/cli.go",
+        "file" : "/home/whited/LocalAI/core/cli/cli.go",
+        "type" : "file",
+        "lineNumber" : 14
+      },
+      "dest" : {
+        "object" : "cli.TTSCMD",
+        "file" : "/home/whited/LocalAI/core/cli/tts.go",
+        "type" : "type",
+        "lineNumber" : 17
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 38,
+    "dest" : 40,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "/home/whited/LocalAI/core/cli/cli.go",
+        "file" : "/home/whited/LocalAI/core/cli/cli.go",
+        "type" : "file",
+        "lineNumber" : 19
+      },
+      "dest" : {
+        "object" : "cli.ExplorerCMD",
+        "file" : "/home/whited/LocalAI/core/cli/explorer.go",
+        "type" : "type",
+        "lineNumber" : 12
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 36,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.VAD",
+        "file" : "/home/whited/LocalAI/core/backend/vad.go",
+        "type" : "function",
+        "lineNumber" : 12
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 33,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.ModelTokenize",
+        "file" : "/home/whited/LocalAI/core/backend/tokenize.go",
+        "type" : "function",
+        "lineNumber" : 10
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 153,
+    "dest" : 163,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "functions.NewSchemaConverter",
+        "file" : "/home/whited/LocalAI/pkg/functions/function_structure.go",
+        "type" : "function",
+        "lineNumber" : 37
+      },
+      "dest" : {
+        "object" : "grammars.GrammarOption",
+        "file" : "/home/whited/LocalAI/pkg/functions/grammars/options.go",
+        "type" : "type",
+        "lineNumber" : 3
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 38,
+    "dest" : 41,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "/home/whited/LocalAI/core/cli/cli.go",
+        "file" : "/home/whited/LocalAI/core/cli/cli.go",
+        "type" : "file",
+        "lineNumber" : 12
+      },
+      "dest" : {
+        "object" : "cli.FederatedCLI",
+        "file" : "/home/whited/LocalAI/core/cli/federated.go",
+        "type" : "type",
+        "lineNumber" : 10
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 38,
+    "dest" : 42,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "/home/whited/LocalAI/core/cli/cli.go",
+        "file" : "/home/whited/LocalAI/core/cli/cli.go",
+        "type" : "file",
+        "lineNumber" : 13
+      },
+      "dest" : {
+        "object" : "cli.ModelsCMD",
+        "file" : "/home/whited/LocalAI/core/cli/models.go",
+        "type" : "type",
+        "lineNumber" : 34
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 25,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.ImageGeneration",
+        "file" : "/home/whited/LocalAI/core/backend/image.go",
+        "type" : "function",
+        "lineNumber" : 10
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 54,
+    "dest" : 167,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 47
+      },
+      "dest" : {
+        "object" : "functions.FunctionsConfig",
+        "file" : "/home/whited/LocalAI/pkg/functions/parse.go",
+        "type" : "type",
+        "lineNumber" : 63
+      },
+      "type" : "Contain"
+    } ]
+  }, {
+    "src" : 138,
+    "dest" : 72,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "services.prepareModel",
+        "file" : "/home/whited/LocalAI/core/services/gallery.go",
+        "type" : "function",
+        "lineNumber" : 33
+      },
+      "dest" : {
+        "object" : "gallery.GalleryModel",
+        "file" : "/home/whited/LocalAI/core/gallery/request.go",
+        "type" : "type",
+        "lineNumber" : 13
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 55,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "config.BuildUsecaseFilterFn",
+        "file" : "/home/whited/LocalAI/core/config/backend_config_filter.go",
+        "type" : "function",
+        "lineNumber" : 25
+      },
+      "dest" : {
+        "object" : "config.BackendConfigUsecases",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "alias",
+        "lineNumber" : 0
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 24,
+    "dest" : 54,
+    "values" : {
+      "Parameter" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "backend.ModelEmbedding",
+        "file" : "/home/whited/LocalAI/core/backend/embeddings.go",
+        "type" : "function",
+        "lineNumber" : 12
+      },
+      "dest" : {
+        "object" : "config.BackendConfig",
+        "file" : "/home/whited/LocalAI/core/config/backend_config.go",
+        "type" : "type",
+        "lineNumber" : 27
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 21,
+    "dest" : 53,
+    "values" : {
+      "Parameter" : 2.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "application.readApiKeysJson",
+        "file" : "/home/whited/LocalAI/core/application/config_file_watcher.go",
+        "type" : "function",
+        "lineNumber" : 130
+      },
+      "dest" : {
+        "object" : "config.ApplicationConfig",
+        "file" : "/home/whited/LocalAI/core/config/application_config.go",
+        "type" : "type",
+        "lineNumber" : 14
+      },
+      "type" : "Parameter"
+    }, {
+      "src" : {
+        "object" : "application.readExternalBackendsJson",
+        "file" : "/home/whited/LocalAI/core/application/config_file_watcher.go",
+        "type" : "function",
+        "lineNumber" : 157
+      },
+      "dest" : {
+        "object" : "config.ApplicationConfig",
+        "file" : "/home/whited/LocalAI/core/config/application_config.go",
+        "type" : "type",
+        "lineNumber" : 14
+      },
+      "type" : "Parameter"
+    } ]
+  }, {
+    "src" : 71,
+    "dest" : 72,
+    "values" : {
+      "Contain" : 1.0
+    },
+    "details" : [ {
+      "src" : {
+        "object" : "gallery.GalleryOp",
+        "file" : "/home/whited/LocalAI/core/gallery/op.go",
+        "type" : "type",
+        "lineNumber" : 11
+      },
+      "dest" : {
+        "object" : "gallery.GalleryModel",
+        "file" : "/home/whited/LocalAI/core/gallery/request.go",
+        "type" : "type",
+        "lineNumber" : 13
+      },
+      "type" : "Contain"
+    } ]
+  } ]
+}
