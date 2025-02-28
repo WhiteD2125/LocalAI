@@ -33,7 +33,7 @@ require (
 	github.com/microcosm-cc/bluemonday v1.0.26
 	github.com/mudler/edgevpn v0.30.1
 	github.com/mudler/go-processmanager v0.0.0-20240820160718-8b802d3ecf82
-	github.com/nikolalohinski/gonja/v2 v2.3.2
+	github.com/nikolalohinski/gonja/v2 v2.3.3
 	github.com/onsi/ginkgo/v2 v2.22.2
 	github.com/onsi/gomega v1.36.2
 	github.com/ory/dockertest/v3 v3.10.0
